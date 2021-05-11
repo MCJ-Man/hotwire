@@ -1,22 +1,23 @@
+<pre>
   _    _  ____ _________          _______ _____  ______ 
  | |  | |/ __ \__   __\ \        / /_   _|  __ \|  ____|
  | |__| | |  | | | |   \ \  /\  / /  | | | |__) | |__   
  |  __  | |  | | | |    \ \/  \/ /   | | |  _  /|  __|  
  | |  | | |__| | | |     \  /\  /   _| |_| | \ \| |____ 
  |_|  |_|\____/  |_|      \/  \/   |_____|_|  \_\______|
-                                                        
+</pre>                                                        
 
 Hotwire GUI is a CAM-Tool used for tool path generation for 6-axis industrial robots. The intended use is for foam cutting tapered wing profiles using a hot wire cutter.
 
 ## Installation:
 
-Tested using Python 3.8.5
-Requires following modules:
--NumPy
--ScyPy
--TKinter
--Matplotlib
--PIL (pillo)
+Tested using Python 3.8.5\
+Requires following modules:\
+-NumPy\
+-ScyPy\
+-TKinter\
+-Matplotlib\
+-PIL (pillo)\
 
 ## What the program requires as input
 

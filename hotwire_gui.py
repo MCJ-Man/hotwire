@@ -38,9 +38,9 @@ root.title("Hotwire")
 
 ###########Paramteters##########
 boolvar = False
-bpath = "./src/clarky.csv"#"nothing selected yet"
-spath = "./src/n0012.csv"#"nothing selected yet"
-img = Image.open("./src/foldericon.png")
+bpath = "./src/packs/clarky.csv"#"nothing selected yet"
+spath = "./src/packs/n0012.csv"#"nothing selected yet"
+img = Image.open("./src/packs/foldericon.png")
 img = img.resize((20, 20), Image.ANTIALIAS)
 image = ImageTk.PhotoImage(img)
 ###########Functions
@@ -188,7 +188,6 @@ def gen_robocode():
         robo_coder.PostProcess(OutputData.outname2, zerovector, filename=OutputData.outname2[0:-4] + ".SRC")
         
 ##########Load Dat###############
-
 load_dat_frame = Label(root, width=700, height=250, borderwidth=1, relief="ridge")
 load_dat_frame.pack(fill=X, side=TOP, expand=False, padx=0, pady=0)
 
@@ -285,7 +284,7 @@ OutputData.e3.grid(sticky=W, row=7, column=2)
 OutputData.b3 = Button(controlpanel, text="Generate RoboCode", width=25, command=gen_robocode, state="disabled")
 OutputData.b3.grid(row=8, column=0, columnspan=3)
 
-img = Image.open("./src/hotwire.png")
+img = Image.open("./src/packs/hotwire.png")
 perc = 0.71
 img = img.resize((int(285*perc), int(78*perc)), Image.ANTIALIAS)
 my_img = ImageTk.PhotoImage(img)
@@ -293,13 +292,8 @@ my_label = Label(root, image=my_img, borderwidth=0)
 my_label.place(x=1, y=685-500)#, height=150, width=150)
 
 #init
-graph(0, 20, "./src/n0012.csv", sdat_frame)
-graph(350, 20, "./src/clarky.csv", bdat_frame)
+graph(0, 20, "./src/packs/n0012.csv", sdat_frame)
+graph(350, 20, "./src/packs/clarky.csv", bdat_frame)
 
 root.mainloop()
 root.destroy()
-
-
-
-
-
